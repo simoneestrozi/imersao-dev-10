@@ -33,12 +33,23 @@ header {
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
 
-header h1 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    margin: 0; /* Remove a margem padrão */
+.logo-texto {
+    text-align: left;
+}
+
+.logo-texto h1 {
+    font-size: 2rem;
+    margin: 0;
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-weight: 400; /* Peso da fonte (médio) */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
+    font-weight: 400;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.logo-texto span {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
 }
 
 div input {
@@ -93,6 +104,7 @@ div input:focus {
 
 main {
     overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     max-width: 80rem; /* Largura máxima do conteúdo principal */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
     margin-top: 2rem; /* Margem no topo */
@@ -174,6 +186,12 @@ article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.lista-ingredientes {
+    padding-left: 1.2rem; /* Adiciona um pequeno recuo à lista */
+    margin-top: 0.5rem; /* Espaço acima da lista */
+    margin-bottom: 0.5rem; /* Espaço abaixo da lista */
+}
+
 .sem-resultados {
     text-align: center;
     font-size: 1.2rem;
@@ -221,7 +239,6 @@ article a:hover {
     width: 100%; /* Largura total */
     color: var(--tertiary-color); /* Cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
-    padding: 15px 20px; /* Espaçamento interno */
     border-top: 1px solid #3c4043; /* Borda superior */
     font-size: 0.8rem; /* Tamanho da fonte */
 }

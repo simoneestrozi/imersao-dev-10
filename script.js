@@ -54,8 +54,13 @@ function renderizarCards(dados) {
             <h2>${dado.nome}</h2>
             <div class="conteudo-receita">
                 <p><strong>Tempo de Preparo:</strong> ${dado.tempo_preparo}</p>
-                <p><strong>Ingredientes:</strong> ${dado.ingredientes.join(', ')}.</p>
-                <p><strong>Modo de Preparo:</strong> ${dado.modo_preparo}</p>
+                <div>
+                    <strong>Ingredientes:</strong>
+                    <ul class="lista-ingredientes">
+                        ${dado.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).join('')}
+                    </ul>
+                </div>
+                <p><strong>Modo de Preparo:</strong><br>${dado.modo_preparo}</p>
             </div>
         `;
         cardContainer.appendChild(card);
