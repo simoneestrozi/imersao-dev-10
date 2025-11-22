@@ -1,0 +1,16 @@
+<svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Cores do site -->
+  <defs>
+    <style>
+      .logo-primary { fill: #FF6347; } /* Tomate */
+      .logo-secondary { fill: #4E443A; } /* Marrom Escuro */
+    </style>
+  </defs>
+
+  <!-- Ícone: Chapéu de Chef com Garfo e Colher -->
+  <path class="logo-primary" d="M40,55 Q20,55 20,35 Q20,15 40,15 L160,15 Q180,15 180,35 Q180,55 160,55 Z M45,55 A30 30 0 0 1 75,25 A25 25 0 0 1 100,5 A35 35 0 0 1 135,30 A20 20 0 0 1 155,55 Z" transform="translate(-5, 0)"/>
+  
+  <!-- Texto do Logo -->
+  <text x="100" y="98" font-size="28" font-weight="bold" text-anchor="middle" class="logo-secondary">Mestre Cuca</text>
+  <text x="100" y="116" font-size="16" font-weight="normal" text-anchor="middle" class="logo-secondary">E X P R E S S</text>
+</svg>

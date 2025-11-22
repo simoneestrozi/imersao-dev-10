@@ -1,302 +1,586 @@
 [
-  {
-    "nome": "TypeScript",
-    "descricao": "Um superset do JavaScript que adiciona tipagem estática opcional à linguagem, facilitando o desenvolvimento de aplicações escaláveis.",
-    "data_criacao": "2012",
-    "link": "https://www.typescriptlang.org/",
-    "tags": [
-      "linguagem de programação",
-      "frontend",
-      "backend",
-      "tipagem estática"
-    ]
-  },
-  {
-    "nome": "React",
-    "descricao": "Uma biblioteca JavaScript declarativa, eficiente e flexível para construir interfaces de usuário baseadas em componentes.",
-    "data_criacao": "2013",
-    "link": "https://reactjs.org/",
-    "tags": [
-      "biblioteca",
-      "frontend",
-      "web development",
-      "componentes"
-    ]
-  },
-  {
-    "nome": "Vue.js",
-    "descricao": "Um framework progressivo para construir interfaces de usuário, conhecido por sua facilidade de aprendizado e integração.",
-    "data_criacao": "2014",
-    "link": "https://vuejs.org/",
-    "tags": [
-      "framework",
-      "frontend",
-      "SPA",
-      "javascript"
-    ]
-  },
-  {
-    "nome": "Node.js",
-    "descricao": "Um ambiente de execução JavaScript assíncrono e orientado a eventos construído sobre o motor V8 do Chrome, usado para construir aplicações de rede escaláveis.",
-    "data_criacao": "2009",
-    "link": "https://nodejs.org/",
-    "tags": [
-      "runtime",
-      "backend",
-      "javascript",
-      "servidor"
-    ]
-  },
-  {
-    "nome": "Go",
-    "descricao": "Uma linguagem de programação estaticamente tipada, compilada, projetada no Google, focada em performance, concorrência e facilidade de uso.",
-    "data_criacao": "2009",
-    "link": "https://golang.org/",
-    "tags": [
-      "linguagem de programação",
-      "backend",
-      "concorrência",
-      "sistemas"
-    ]
-  },
-  {
-    "nome": "Rust",
-    "descricao": "Uma linguagem de programação que foca em segurança de memória, performance e concorrência, ideal para sistemas de baixo nível.",
-    "data_criacao": "2010",
-    "link": "https://www.rust-lang.org/",
-    "tags": [
-      "linguagem de programação",
-      "sistemas operacionais",
-      "segurança",
-      "performance"
-    ]
-  },
-  {
-    "nome": "Kotlin",
-    "descricao": "Uma linguagem de programação moderna e pragmática que roda na JVM (Máquina Virtual Java), sendo a linguagem preferencial para desenvolvimento Android.",
-    "data_criacao": "2011",
-    "link": "https://kotlinlang.org/",
-    "tags": [
-      "linguagem de programação",
-      "android",
-      "backend",
-      "jvm"
-    ]
-  },
-  {
-    "nome": "Docker",
-    "descricao": "Uma plataforma que permite o empacotamento, distribuição e execução de aplicações em containers leves e portáteis.",
-    "data_criacao": "2013",
-    "link": "https://www.docker.com/",
-    "tags": [
-      "devops",
-      "containerização",
-      "ferramenta",
-      "virtualização"
-    ]
-  },
-  {
-    "nome": "Kubernetes",
-    "descricao": "Um sistema open-source para automatizar a implantação, escalonamento e gerenciamento de aplicações em container.",
-    "data_criacao": "2014",
-    "link": "https://kubernetes.io/",
-    "tags": [
-      "orquestração",
-      "devops",
-      "cloud computing",
-      "ferramenta"
-    ]
-  },
-  {
-    "nome": "PostgreSQL",
-    "descricao": "Um poderoso sistema de banco de dados relacional de código aberto, conhecido por sua robustez e conformidade com padrões SQL.",
-    "data_criacao": "1996",
-    "link": "https://www.postgresql.org/",
-    "tags": [
-      "banco de dados",
-      "relacional",
-      "sql",
-      "open source"
-    ]
-  },
-  {
-    "nome": "MongoDB",
-    "descricao": "Um banco de dados NoSQL orientado a documentos, projetado para escalabilidade e desenvolvimento ágil.",
-    "data_criacao": "2009",
-    "link": "https://www.mongodb.com/",
-    "tags": [
-      "banco de dados",
-      "nosql",
-      "documentos",
-      "escalabilidade"
-    ]
-  },
-  {
-    "nome": "Redis",
-    "descricao": "Um armazenamento de estrutura de dados em memória, frequentemente usado como cache, message broker e banco de dados rápido.",
-    "data_criacao": "2009",
-    "link": "https://redis.io/",
-    "tags": [
-      "banco de dados",
-      "cache",
-      "nosql",
-      "mensageria"
-    ]
-  },
-  {
-    "nome": "GraphQL",
-    "descricao": "Uma linguagem de consulta e manipulação de dados para APIs, permitindo que os clientes solicitem exatamente os dados de que precisam.",
-    "data_criacao": "2015",
-    "link": "https://graphql.org/",
-    "tags": [
-      "api",
-      "linguagem de consulta",
-      "backend",
-      "frontend"
-    ]
-  },
-  {
-    "nome": "Next.js",
-    "descricao": "Um framework React para produção que permite renderização do lado do servidor (SSR) e geração de sites estáticos.",
-    "data_criacao": "2016",
-    "link": "https://nextjs.org/",
-    "tags": [
-      "framework",
-      "frontend",
-      "ssr",
-      "react"
-    ]
-  },
-  {
-    "nome": "Terraform",
-    "descricao": "Uma ferramenta de Infraestrutura como Código (IaC) que permite provisionar e gerenciar recursos de nuvem usando arquivos de configuração declarativos.",
-    "data_criacao": "2014",
-    "link": "https://www.terraform.io/",
-    "tags": [
-      "devops",
-      "iac",
-      "cloud computing",
-      "ferramenta"
-    ]
-  },
-  {
-    "nome": "AWS Lambda",
-    "descricao": "Um serviço de computação serverless que permite executar código sem provisionar ou gerenciar servidores.",
-    "data_criacao": "2014",
-    "link": "https://aws.amazon.com/lambda/",
-    "tags": [
-      "serverless",
-      "cloud computing",
-      "backend",
-      "aws"
-    ]
-  },
-  {
-    "nome": "Git",
-    "descricao": "Um sistema de controle de versão distribuído, gratuito e open source, projetado para lidar com tudo, desde pequenos a grandes projetos.",
-    "data_criacao": "2005",
-    "link": "https://git-scm.com/",
-    "tags": [
-      "controle de versão",
-      "ferramenta",
-      "colaboração",
-      "devops"
-    ]
-  },
-  {
-    "nome": "Django",
-    "descricao": "Um framework web de alto nível em Python que incentiva o desenvolvimento rápido e um design limpo e pragmático.",
-    "data_criacao": "2005",
-    "link": "https://www.djangoproject.com/",
-    "tags": [
-      "framework",
-      "backend",
-      "web development",
-      "orm"
-    ]
-  },
-  {
-    "nome": "Spring Boot",
-    "descricao": "Uma extensão do framework Spring que simplifica a criação de aplicações autossuficientes e prontas para produção com configurações mínimas.",
-    "data_criacao": "2014",
-    "link": "https://spring.io/projects/spring-boot",
-    "tags": [
-      "framework",
-      "backend",
-      "microserviços",
-      "jvm"
-    ]
-  },
-  {
-    "nome": "Swift",
-    "descricao": "Uma poderosa e intuitiva linguagem de programação desenvolvida pela Apple para iOS, macOS, watchOS e tvOS.",
-    "data_criacao": "2014",
-    "link": "https://www.swift.org/",
-    "tags": [
-      "linguagem de programação",
-      "mobile",
-      "apple",
-      "ios"
-    ]
-  },
-  {
-    "nome": "Svelte",
-    "descricao": "Um compilador de frontend que move o trabalho reativo para a etapa de build, resultando em código vanilla JavaScript pequeno e rápido.",
-    "data_criacao": "2016",
-    "link": "https://svelte.dev/",
-    "tags": [
-      "framework",
-      "frontend",
-      "compilador",
-      "performance"
-    ]
-  },
-  {
-    "nome": "Apache Kafka",
-    "descricao": "Uma plataforma de streaming de eventos distribuída que permite publicar, assinar, armazenar e processar fluxos de registros em tempo real.",
-    "data_criacao": "2011",
-    "link": "https://kafka.apache.org/",
-    "tags": [
-      "mensageria",
-      "streaming",
-      "big data",
-      "distribuído"
-    ]
-  },
-  {
-    "nome": "PHP",
-    "descricao": "Uma linguagem de script de propósito geral, amplamente usada para desenvolvimento web do lado do servidor.",
-    "data_criacao": "1995",
-    "link": "https://www.php.net/",
-    "tags": [
-      "linguagem de programação",
-      "backend",
-      "web development",
-      "scripting"
-    ]
-  },
-  {
-    "nome": "Prometheus",
-    "descricao": "Um sistema de monitoramento e alerta de código aberto altamente flexível, ideal para ambientes de microserviços.",
-    "data_criacao": "2012",
-    "link": "https://prometheus.io/",
-    "tags": [
-      "monitoramento",
-      "devops",
-      "ferramenta",
-      "observabilidade"
-    ]
-  },
-  {
-    "nome": "Angular",
-    "descricao": "Um framework de desenvolvimento de aplicações web baseado em TypeScript, mantido pelo Google, focado em grandes aplicações de nível empresarial.",
-    "data_criacao": "2016",
-    "link": "https://angular.io/",
-    "tags": [
-      "framework",
-      "frontend",
-      "typescript",
-      "spa"
-    ]
-  }
+    {
+        "nome": "Bolo de Coco Simples",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["3 ovos", "2 xícaras de açúcar", "1 xícara de leite", "2 xícaras de farinha de trigo", "100g de coco ralado", "1 colher de sopa de fermento"],
+        "modo_preparo": "Bata os ovos com o açúcar. Adicione o leite, a farinha e o coco ralado, misturando bem. Por último, incorpore o fermento. Asse em forno pré-aquecido a 180°C por cerca de 40 minutos."
+    },
+    {
+        "nome": "Omelete de Queijo e Tomate",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["2 ovos", "50g de queijo mussarela", "1 tomate picado", "Sal a gosto", "Pimenta do reino a gosto", "Salsinha"],
+        "modo_preparo": "Bata os ovos com sal e pimenta. Despeje em uma frigideira antiaderente quente. Espalhe o queijo e o tomate por cima. Dobre ao meio e cozinhe até o queijo derreter. Salpique salsinha antes de servir."
+    },
+    {
+        "nome": "Panqueca Americana",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 xícara de farinha de trigo", "1 colher de sopa de açúcar", "1 ovo", "1 xícara de leite", "2 colheres de sopa de manteiga derretida", "1 colher de chá de fermento"],
+        "modo_preparo": "Misture os ingredientes secos. Em outra tigela, bata o ovo com o leite e a manteiga. Junte as duas misturas sem mexer demais. Aqueça uma frigideira e despeje pequenas porções da massa. Vire quando começar a borbulhar."
+    },
+    {
+        "nome": "Arroz de Forno Cremoso",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["2 xícaras de arroz cozido", "1 lata de milho", "1 lata de ervilha", "200g de presunto picado", "200g de queijo mussarela", "1 caixa de creme de leite", "Molho de tomate"],
+        "modo_preparo": "Em uma tigela, misture o arroz cozido, milho, ervilha, presunto e um pouco de molho de tomate. Transfira para um refratário, cubra com o creme de leite e o queijo mussarela. Leve ao forno para gratinar."
+    },
+    {
+        "nome": "Macarrão Alho e Óleo",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["250g de macarrão (espaguete)", "4 dentes de alho fatiados", "Azeite de oliva a gosto", "Sal a gosto", "Pimenta calabresa (opcional)", "Salsinha picada"],
+        "modo_preparo": "Cozinhe o macarrão conforme as instruções da embalagem. Enquanto isso, doure o alho fatiado em uma frigideira com bastante azeite, cuidando para não queimar. Escorra o macarrão e misture ao alho e óleo. Tempere com sal, pimenta e finalize com salsinha."
+    }
+     ,
+    {
+        "nome": "Frango Grelhado com Legumes",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["2 filés de frango", "1 cenoura", "1 abobrinha", "Azeite", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Tempere os filés de frango com sal e pimenta. Corte os legumes em rodelas. Grelhe o frango em uma frigideira com azeite. Na mesma frigideira, salteie os legumes até ficarem macios. Sirva o frango com os legumes."
+    },
+    {
+        "nome": "Carne Moída com Batata",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["500g de carne moída", "3 batatas", "1 cebola", "2 dentes de alho", "Molho de tomate", "Óleo", "Sal", "Cheiro-verde"],
+        "modo_preparo": "Cozinhe as batatas e corte em cubos. Em uma panela, refogue a cebola e o alho no óleo. Adicione a carne moída e frite até dourar. Junte o molho de tomate e as batatas cozidas. Tempere com sal e cozinhe por mais 10 minutos. Finalize com cheiro-verde."
+    },
+    {
+        "nome": "Sopa de Feijão",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["2 xícaras de feijão cozido e temperado", "1 xícara de macarrão para sopa", "Água", "Cheiro-verde"],
+        "modo_preparo": "Bata o feijão cozido no liquidificador com um pouco de água. Leve ao fogo em uma panela. Quando ferver, adicione o macarrão e cozinhe até ficar al dente. Sirva quente com cheiro-verde."
+    },
+    {
+        "nome": "Salada de Macarrão",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["250g de macarrão parafuso cozido", "1 lata de milho", "1 cenoura ralada", "100g de presunto picado", "Maionese a gosto", "Sal"],
+        "modo_preparo": "Em uma tigela, misture o macarrão cozido e frio, o milho, a cenoura e o presunto. Adicione maionese até dar o ponto desejado e tempere com sal. Leve à geladeira antes de servir."
+    },
+    {
+        "nome": "Arroz com Lentilha (Mjaddra)",
+        "tempo_preparo": "45 minutos",
+        "ingredientes": ["1 xícara de arroz", "1/2 xícara de lentilha", "1 cebola grande", "Azeite", "Sal"],
+        "modo_preparo": "Cozinhe a lentilha até ficar macia. Em outra panela, frite a cebola em rodelas no azeite até ficar bem dourada e crocante. Reserve. Na mesma panela, refogue o arroz, adicione a lentilha cozida, sal e água. Cozinhe até o arroz secar. Sirva com a cebola frita por cima."
+    },
+    {
+        "nome": "Bife à Parmegiana",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["4 bifes de coxão mole", "2 ovos", "Farinha de rosca", "Molho de tomate", "200g de queijo mussarela", "Óleo para fritar", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Tempere os bifes com sal e pimenta. Passe-os no ovo batido e depois na farinha de rosca. Frite em óleo quente até dourar. Coloque os bifes em um refratário, cubra com molho de tomate e queijo mussarela. Leve ao forno para gratinar."
+    },
+    {
+        "nome": "Estrogonofe de Frango",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["500g de peito de frango em cubos", "1 cebola", "2 dentes de alho", "1 lata de creme de leite", "3 colheres de sopa de ketchup", "1 colher de sopa de mostarda", "Champignon (opcional)", "Óleo", "Sal"],
+        "modo_preparo": "Em uma panela, refogue a cebola e o alho no óleo. Adicione o frango e frite até dourar. Junte o ketchup, a mostarda e o champignon. Desligue o fogo, misture o creme de leite e tempere com sal. Sirva com arroz e batata palha."
+    },
+    {
+        "nome": "Lasanha à Bolonhesa",
+        "tempo_preparo": "1 hora e 20 minutos",
+        "ingredientes": ["500g de carne moída", "1 pacote de massa para lasanha", "500g de queijo mussarela", "500g de presunto", "Molho de tomate", "1 cebola", "2 dentes de alho", "Sal"],
+        "modo_preparo": "Prepare o molho bolonhesa refogando a cebola, o alho e a carne moída. Adicione o molho de tomate e cozinhe. Em um refratário, monte a lasanha alternando camadas de molho, massa, presunto e queijo. Termine com queijo e leve ao forno por 30-40 minutos."
+    },
+    {
+        "nome": "Purê de Batata",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["5 batatas médias", "1/2 xícara de leite", "2 colheres de sopa de manteiga", "Sal", "Noz-moscada (opcional)"],
+        "modo_preparo": "Cozinhe as batatas até ficarem bem macias. Descasque e amasse com um garfo ou espremedor. Leve ao fogo baixo, adicione a manteiga, o leite e o sal. Mexa bem até ficar cremoso. Tempere com noz-moscada."
+    },
+    {
+        "nome": "Feijoada Simples",
+        "tempo_preparo": "2 horas",
+        "ingredientes": ["500g de feijão preto", "200g de linguiça calabresa", "200g de carne seca", "1 cebola", "3 dentes de alho", "Louro", "Óleo", "Sal"],
+        "modo_preparo": "Deixe a carne seca de molho para dessalgar. Cozinhe o feijão com a carne seca e folhas de louro. Em outra panela, frite a linguiça, a cebola e o alho. Adicione ao feijão cozido e deixe apurar o sabor. Ajuste o sal."
+    },
+    {
+        "nome": "Pão de Queijo de Frigideira",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["1 ovo", "4 colheres de sopa de tapioca", "2 colheres de sopa de queijo parmesão ralado", "1 pitada de sal"],
+        "modo_preparo": "Misture todos os ingredientes em uma tigela. Despeje a massa em uma frigideira antiaderente aquecida. Cozinhe em fogo baixo dos dois lados até dourar."
+    },
+    {
+        "nome": "Bolo de Fubá Cremoso",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["4 ovos", "2 xícaras de açúcar", "1 xícara de fubá", "3 xícaras de leite", "1/2 xícara de queijo parmesão ralado", "2 colheres de sopa de farinha de trigo", "1 colher de sopa de fermento"],
+        "modo_preparo": "Bata todos os ingredientes no liquidificador, exceto o fermento. Adicione o fermento e misture levemente. Despeje em uma forma untada e enfarinhada. Asse em forno médio por cerca de 45 minutos."
+    },
+    {
+        "nome": "Mousse de Maracujá",
+        "tempo_preparo": "15 minutos + geladeira",
+        "ingredientes": ["1 lata de leite condensado", "1 lata de creme de leite", "A mesma medida da lata de suco de maracujá concentrado"],
+        "modo_preparo": "Bata todos os ingredientes no liquidificador por 3 minutos. Despeje em uma travessa ou em taças individuais. Leve à geladeira por pelo menos 2 horas."
+    },
+    {
+        "nome": "Brigadeiro",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 lata de leite condensado", "3 colheres de sopa de chocolate em pó", "1 colher de sopa de manteiga", "Chocolate granulado"],
+        "modo_preparo": "Em uma panela, misture o leite condensado, o chocolate em pó e a manteiga. Leve ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Deixe esfriar, enrole e passe no granulado."
+    },
+    {
+        "nome": "Beijinho",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 lata de leite condensado", "100g de coco ralado", "1 colher de sopa de manteiga", "Açúcar cristal ou coco ralado para enrolar"],
+        "modo_preparo": "Em uma panela, misture o leite condensado, o coco e a manteiga. Leve ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Deixe esfriar, enrole e passe no açúcar ou coco."
+    },
+    {
+        "nome": "Arroz Doce",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["1 xícara de arroz", "2 xícaras de água", "1 litro de leite", "1 lata de leite condensado", "Canela em pó"],
+        "modo_preparo": "Cozinhe o arroz na água até secar. Adicione o leite e o leite condensado. Cozinhe em fogo baixo, mexendo de vez em quando, até ficar cremoso. Sirva polvilhado com canela."
+    },
+    {
+        "nome": "Canjica",
+        "tempo_preparo": "1 hora e 30 minutos",
+        "ingredientes": ["500g de milho para canjica", "1 litro de leite", "1 lata de leite condensado", "1 vidro de leite de coco", "100g de coco ralado", "Canela em pó"],
+        "modo_preparo": "Deixe o milho de molho por algumas horas. Cozinhe na panela de pressão até ficar macio. Transfira para uma panela normal, adicione o leite, o leite condensado, o leite de coco e o coco ralado. Cozinhe até engrossar. Sirva com canela."
+    },
+    {
+        "nome": "Torta de Frango de Liquidificador",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["2 xícaras de leite", "1 xícara de óleo", "2 ovos", "2 xícaras de farinha de trigo", "1 colher de sopa de fermento", "Sal", "300g de frango desfiado e temperado"],
+        "modo_preparo": "Bata no liquidificador o leite, o óleo, os ovos, a farinha e o sal. Adicione o fermento e misture. Em uma forma untada, despeje metade da massa, espalhe o recheio de frango e cubra com o restante da massa. Asse em forno médio por 35-40 minutos."
+    },
+    {
+        "nome": "Suflê de Chuchu",
+        "tempo_preparo": "45 minutos",
+        "ingredientes": ["2 chuchus cozidos e amassados", "3 ovos (gemas e claras separadas)", "1/2 xícara de queijo parmesão ralado", "1 colher de sopa de manteiga", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Misture o chuchu amassado, as gemas, a manteiga e o queijo. Tempere com sal e pimenta. Bata as claras em neve e incorpore delicadamente à mistura. Despeje em um refratário untado e leve ao forno pré-aquecido a 180°C por 30 minutos."
+    },
+    {
+        "nome": "Farofa de Ovo",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["2 ovos", "1 xícara de farinha de mandioca", "1/2 cebola picada", "2 colheres de sopa de manteiga", "Sal", "Cheiro-verde"],
+        "modo_preparo": "Derreta a manteiga em uma frigideira e refogue a cebola. Quebre os ovos e mexa até cozinhar. Adicione a farinha de mandioca aos poucos, mexendo sempre. Tempere com sal e finalize com cheiro-verde."
+    },
+    {
+        "nome": "Bife Acebolado",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["4 bifes", "2 cebolas grandes em rodelas", "Óleo", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Tempere os bifes com sal e pimenta. Frite os bifes em óleo quente e reserve. Na mesma frigideira, frite as rodelas de cebola até ficarem macias e douradas. Coloque as cebolas sobre os bifes e sirva."
+    },
+    {
+        "nome": "Couve Refogada",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["1 maço de couve fatiada", "2 dentes de alho picados", "Azeite", "Sal"],
+        "modo_preparo": "Aqueça o azeite em uma panela e doure o alho. Adicione a couve e refogue rapidamente, apenas até murchar. Tempere com sal e sirva."
+    },
+    {
+        "nome": "Salada de Tomate com Cebola",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["3 tomates", "1 cebola", "Azeite", "Vinagre", "Sal", "Orégano"],
+        "modo_preparo": "Corte os tomates e a cebola em rodelas finas. Disponha em uma saladeira e tempere com sal, orégano, azeite e vinagre a gosto."
+    },
+    {
+        "nome": "Batata Frita Caseira",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["4 batatas", "Óleo para fritar", "Sal"],
+        "modo_preparo": "Descasque as batatas e corte em palitos. Lave e seque bem. Frite em óleo quente até ficarem douradas e crocantes. Escorra em papel toalha e salpique sal."
+    },
+    {
+        "nome": "Frango à Passarinho",
+        "tempo_preparo": "45 minutos",
+        "ingredientes": ["1 kg de frango em pedaços pequenos", "4 dentes de alho picados", "Suco de 1 limão", "Sal", "Pimenta do reino", "Óleo para fritar", "Salsinha"],
+        "modo_preparo": "Tempere o frango com alho, limão, sal e pimenta. Deixe marinar por 30 minutos. Frite em óleo quente até dourar bem. Escorra e sirva com salsinha picada por cima."
+    },
+    {
+        "nome": "Bolo de Cenoura com Cobertura de Chocolate",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["3 cenouras médias", "3 ovos", "1 xícara de óleo", "2 xícaras de açúcar", "2 xícaras de farinha de trigo", "1 colher de sopa de fermento", "1 lata de leite condensado", "4 colheres de sopa de chocolate em pó"],
+        "modo_preparo": "Bata no liquidificador a cenoura, os ovos e o óleo. Despeje em uma tigela e misture o açúcar e a farinha. Adicione o fermento. Asse em forno médio. Para a cobertura, misture o leite condensado e o chocolate em pó e leve ao fogo até engrossar. Cubra o bolo."
+    },
+    {
+        "nome": "Pudim de Leite Condensado",
+        "tempo_preparo": "1 hora e 30 minutos",
+        "ingredientes": ["1 lata de leite condensado", "A mesma medida da lata de leite", "3 ovos", "1 xícara de açúcar para a calda"],
+        "modo_preparo": "Derreta o açúcar em uma panela até virar uma calda dourada e forre uma forma de pudim. Bata o leite condensado, o leite e os ovos no liquidificador. Despeje na forma caramelizada. Asse em banho-maria por cerca de 1 hora."
+    },
+    {
+        "nome": "Maionese de Batata",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["5 batatas cozidas em cubos", "2 cenouras cozidas em cubos", "1 xícara de maionese", "Sal", "Cheiro-verde", "Ovo cozido (opcional)"],
+        "modo_preparo": "Em uma tigela, misture delicadamente as batatas e as cenouras cozidas e frias. Adicione a maionese, o sal e o cheiro-verde. Misture bem. Decore com ovos cozidos, se desejar."
+    },
+    {
+        "nome": "Carne de Panela com Mandioca",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["1 kg de acém em cubos", "500g de mandioca em pedaços", "1 cebola", "2 dentes de alho", "Molho de tomate", "Óleo", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Na panela de pressão, doure a carne no óleo. Adicione a cebola, o alho e refogue. Junte o molho de tomate, sal, pimenta e cubra com água. Cozinhe por 40 minutos. Abra a panela, adicione a mandioca e cozinhe por mais 15 minutos ou até a mandioca ficar macia."
+    },
+    {
+        "nome": "Cuscuz Paulista",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["2 xícaras de farinha de milho", "1 lata de sardinha ou atum", "1 lata de ervilha", "1/2 pimentão picado", "1 cebola picada", "Molho de tomate", "Ovo cozido e tomate para decorar"],
+        "modo_preparo": "Refogue a cebola e o pimentão. Adicione a sardinha, a ervilha e o molho de tomate. Deixe ferver. Em uma tigela, umedeça a farinha de milho com este molho quente. Forre uma forma com rodelas de ovo e tomate, coloque a massa do cuscuz, aperte bem e desenforme."
+    },
+    {
+        "nome": "Sopa de Legumes",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["2 batatas", "1 cenoura", "1 chuchu", "1/2 abobrinha", "1 cebola", "Sal", "Azeite"],
+        "modo_preparo": "Pique todos os legumes em cubos. Em uma panela, refogue a cebola no azeite. Adicione os outros legumes, cubra com água e tempere com sal. Cozinhe até os legumes ficarem bem macios. Pode ser servida em pedaços ou batida no liquidificador."
+    },
+    {
+        "nome": "Biscoito de Maizena",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["1 lata de leite condensado", "500g de amido de milho (maizena)", "200g de manteiga"],
+        "modo_preparo": "Misture todos os ingredientes com as mãos até formar uma massa que não grude. Faça bolinhas, achate com um garfo e coloque em uma assadeira. Asse em forno médio por cerca de 15-20 minutos, sem deixar dourar muito."
+    },
+    {
+        "nome": "Tutu de Feijão",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["2 xícaras de feijão cozido", "1/2 xícara de farinha de mandioca", "2 dentes de alho", "Bacon picado", "Linguiça frita e ovo cozido para acompanhar"],
+        "modo_preparo": "Bata o feijão no liquidificador. Em uma panela, frite o bacon e o alho. Despeje o feijão batido e deixe ferver. Adicione a farinha de mandioca aos poucos, mexendo sem parar, até engrossar. Sirva com linguiça e ovo."
+    },
+    {
+        "nome": "Salpicão de Frango",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["500g de frango desfiado", "1 cenoura ralada", "1 lata de milho", "1 maçã picada", "Uva passa a gosto", "Maionese", "Batata palha"],
+        "modo_preparo": "Misture todos os ingredientes, exceto a batata palha, em uma tigela grande. Tempere com sal se necessário. Leve à geladeira. Na hora de servir, cubra com a batata palha."
+    },
+    {
+        "nome": "Doce de Abóbora",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["1 kg de abóbora pescoço em cubos", "500g de açúcar", "Cravo-da-índia a gosto", "Coco ralado (opcional)"],
+        "modo_preparo": "Em uma panela, coloque a abóbora, o açúcar e os cravos. Leve ao fogo baixo e cozinhe, mexendo de vez em quando, até a abóbora desmanchar e o doce ficar com consistência. Se desejar, adicione coco ralado no final."
+    },
+    {
+        "nome": "Vaca Atolada",
+        "tempo_preparo": "1 hora e 40 minutos",
+        "ingredientes": ["1 kg de costela bovina", "1 kg de mandioca", "1 cebola", "3 dentes de alho", "Cheiro-verde", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Na panela de pressão, sele a costela. Adicione cebola, alho, sal, pimenta e água. Cozinhe por 50 minutos. Retire a pressão, adicione a mandioca e cozinhe por mais 20 minutos ou até a mandioca ficar macia e o caldo grosso. Finalize com cheiro-verde."
+    },
+    {
+        "nome": "Escondidinho de Carne Seca",
+        "tempo_preparo": "1 hora e 30 minutos",
+        "ingredientes": ["500g de carne seca dessalgada e desfiada", "1 kg de mandioca cozida", "1 cebola", "1/2 xícara de leite", "Manteiga", "Queijo parmesão ralado"],
+        "modo_preparo": "Refogue a carne seca com a cebola. Reserve. Amasse a mandioca cozida, misture com leite e manteiga para fazer um purê. Em um refratário, coloque a carne seca refogada e cubra com o purê. Polvilhe queijo parmesão e leve ao forno para gratinar."
+    },
+    {
+        "nome": "Bolinho de Chuva",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["2 ovos", "1 xícara de açúcar", "1 xícara de leite", "2 e 1/2 xícaras de farinha de trigo", "1 colher de sopa de fermento", "Óleo para fritar", "Açúcar e canela para polvilhar"],
+        "modo_preparo": "Misture os ovos e o açúcar. Adicione o leite e a farinha, mexendo bem. Incorpore o fermento. Com duas colheres, modele os bolinhos e frite em óleo quente até dourar. Passe na mistura de açúcar e canela."
+    },
+    {
+        "nome": "Caldo Verde",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["5 batatas", "1 linguiça calabresa em rodelas", "1 maço de couve fatiada fina", "1 cebola", "Azeite", "Sal"],
+        "modo_preparo": "Cozinhe as batatas com água e sal. Bata no liquidificador para formar um creme. Em uma panela, frite a calabresa e a cebola no azeite. Adicione o creme de batata e deixe ferver. Desligue o fogo, junte a couve e abafe por 5 minutos. Sirva."
+    },
+    {
+        "nome": "Pizza de Frigideira",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 ovo", "1/2 xícara de leite", "1 xícara de farinha de trigo", "1 colher de chá de fermento", "Sal", "Molho de tomate", "Queijo mussarela", "Orégano"],
+        "modo_preparo": "Misture o ovo, leite, farinha, fermento e sal. Despeje metade da massa em uma frigideira untada e cozinhe em fogo baixo com a tampa. Vire a massa, espalhe molho, queijo e orégano. Tampe novamente e cozinhe até o queijo derreter."
+    },
+    {
+        "nome": "Abobrinha Refogada",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["2 abobrinhas em cubos", "1/2 cebola picada", "1 dente de alho picado", "Azeite", "Sal", "Cheiro-verde"],
+        "modo_preparo": "Em uma panela, refogue a cebola e o alho no azeite. Adicione a abobrinha e refogue até ficar macia, mas ainda crocante. Tempere com sal e finalize com cheiro-verde."
+    },
+    {
+        "nome": "Linguiça com Batata na Airfryer",
+        "tempo_preparo": "35 minutos",
+        "ingredientes": ["500g de linguiça toscana", "3 batatas em cubos", "Azeite", "Sal", "Alecrim"],
+        "modo_preparo": "Misture as batatas com azeite, sal e alecrim. Coloque as batatas e a linguiça na airfryer. Asse a 200°C por cerca de 25-30 minutos, virando na metade do tempo, até a linguiça e as batatas estarem douradas."
+    },
+    {
+        "nome": "Creme de Milho",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 lata de milho verde", "1/2 xícara de leite", "1 colher de sopa de manteiga", "1/2 cebola picada", "Sal", "Creme de leite (opcional)"],
+        "modo_preparo": "Bata no liquidificador o milho com o leite (reserve um pouco de milho inteiro). Em uma panela, derreta a manteiga e refogue a cebola. Despeje o creme de milho, adicione os grãos inteiros e cozinhe até engrossar. Tempere com sal. Adicione creme de leite no final, se desejar."
+    },
+    {
+        "nome": "Filé de Peixe Empanado",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["500g de filé de tilápia ou merluza", "Suco de 1 limão", "Sal", "Pimenta do reino", "1 ovo", "Farinha de trigo", "Farinha de rosca", "Óleo"],
+        "modo_preparo": "Tempere os filés com limão, sal e pimenta. Passe cada filé na farinha de trigo, depois no ovo batido e por último na farinha de rosca. Frite em óleo quente até dourar."
+    },
+    {
+        "nome": "Arroz à Grega",
+        "tempo_preparo": "35 minutos",
+        "ingredientes": ["2 xícaras de arroz", "1 cenoura em cubos pequenos", "1/2 pimentão picado", "1 lata de ervilha", "Uva passa a gosto", "Cebola", "Alho", "Óleo", "Sal"],
+        "modo_preparo": "Refogue a cebola e o alho no óleo. Adicione o arroz e frite um pouco. Junte a cenoura, o pimentão, a ervilha e as passas. Cubra com água, tempere com sal e cozinhe até a água secar."
+    },
+    {
+        "nome": "Gelatina Colorida",
+        "tempo_preparo": "30 minutos + geladeira",
+        "ingredientes": ["4 caixas de gelatina de sabores/cores diferentes", "1 lata de leite condensado", "1 lata de creme de leite", "1 envelope de gelatina sem sabor"],
+        "modo_preparo": "Prepare cada gelatina colorida separadamente e leve para gelar até firmar. Corte em cubos. Dissolva a gelatina sem sabor conforme a embalagem. Bata no liquidificador com o leite condensado e o creme de leite. Misture delicadamente este creme com os cubos de gelatina. Leve para gelar novamente."
+    },
+    {
+        "nome": "Quibe de Forno",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["500g de carne moída", "250g de trigo para quibe", "1 cebola picada", "Hortelã picada", "Sal", "Pimenta síria", "Azeite", "Requeijão (opcional para rechear)"],
+        "modo_preparo": "Hidrate o trigo em água quente por 30 minutos e escorra bem. Misture com a carne moída, cebola, hortelã, sal e pimenta. Em um refratário untado, coloque metade da massa, espalhe requeijão se desejar, e cubra com o resto da massa. Faça riscos na superfície, regue com azeite e asse por 40 minutos."
+    },
+    {
+        "nome": "Batata Doce Assada",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["2 batatas doces grandes", "Azeite", "Sal", "Alecrim ou páprica"],
+        "modo_preparo": "Corte as batatas doces em rodelas ou palitos. Tempere com azeite, sal e os temperos de sua preferência. Espalhe em uma assadeira e asse em forno a 200°C por cerca de 30 minutos, virando na metade do tempo."
+    },
+    {
+        "nome": "Macarrão com Salsicha e Molho de Tomate",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["500g de macarrão", "8 salsichas em rodelas", "1 lata de molho de tomate", "1/2 cebola picada", "Sal"],
+        "modo_preparo": "Cozinhe o macarrão. Em outra panela, refogue a cebola, adicione a salsicha e o molho de tomate. Deixe cozinhar por alguns minutos. Sirva o molho sobre o macarrão."
+    },
+    {
+        "nome": "Mandioca Frita",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["500g de mandioca", "Óleo para fritar", "Sal"],
+        "modo_preparo": "Cozinhe a mandioca em água e sal até ficar macia, mas sem desmanchar. Escorra e seque bem. Corte em pedaços e frite em óleo quente até dourar. Sirva com sal."
+    },
+    {
+        "nome": "Bolo de Chocolate Simples",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["2 ovos", "1 xícara de açúcar", "1 xícara de chocolate em pó", "1/2 xícara de óleo", "1 xícara de água quente", "2 xícaras de farinha de trigo", "1 colher de sopa de fermento"],
+        "modo_preparo": "Misture os ovos, açúcar, chocolate e óleo. Adicione a água quente e mexa. Incorpore a farinha e por último o fermento. Asse em forno médio por cerca de 40 minutos."
+    },
+    {
+        "nome": "Pão com Ovo",
+        "tempo_preparo": "5 minutos",
+        "ingredientes": ["2 fatias de pão de forma", "1 ovo", "Manteiga", "Sal"],
+        "modo_preparo": "Passe manteiga em um lado de cada fatia de pão. Faça um buraco no meio de uma das fatias. Coloque na frigideira com a manteiga para baixo. Quebre o ovo no buraco. Tempere com sal. Quando o ovo estiver quase frito, coloque a outra fatia por cima e vire para dourar o outro lado."
+    },
+    {
+        "nome": "Torrada de Alho",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["Pão francês amanhecido", "2 dentes de alho amassados", "3 colheres de sopa de manteiga ou maionese", "Orégano", "Salsinha"],
+        "modo_preparo": "Misture a manteiga (ou maionese) com o alho, orégano e salsinha. Passe essa pasta nas fatias de pão. Leve ao forno ou airfryer até dourar."
+    },
+    {
+        "nome": "Salsicha empanada (Corn Dog)",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["8 salsichas", "1 xícara de farinha de trigo", "1/2 xícara de fubá", "1 ovo", "1 xícara de leite", "1 colher de chá de fermento", "Sal", "Palitos de churrasco", "Óleo"],
+        "modo_preparo": "Espete as salsichas nos palitos. Misture os ingredientes secos, adicione o ovo e o leite para fazer uma massa grossa. Mergulhe as salsichas na massa e frite em óleo quente até dourar."
+    },
+    {
+        "nome": "Polenta com Molho à Bolonhesa",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["1 xícara de fubá", "4 xícaras de água", "Sal", "Molho à bolonhesa pronto", "Queijo parmesão ralado"],
+        "modo_preparo": "Dissolva o fubá em um pouco de água fria. Leve o resto da água para ferver com sal. Despeje o fubá dissolvido e cozinhe, mexendo sempre, até engrossar. Sirva a polenta com o molho quente por cima e queijo ralado."
+    },
+    {
+        "nome": "Banana da Terra Frita",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["2 bananas da terra maduras", "Manteiga ou óleo"],
+        "modo_preparo": "Corte as bananas em rodelas ou fatias longitudinais. Frite na manteiga ou óleo quente até dourar dos dois lados. Ótimo acompanhamento para refeições."
+    },
+    {
+        "nome": "Ovos Mexidos Cremosos",
+        "tempo_preparo": "5 minutos",
+        "ingredientes": ["3 ovos", "2 colheres de sopa de leite ou creme de leite", "1 colher de sopa de manteiga", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Bata os ovos com o leite, sal e pimenta. Derreta a manteiga em uma frigideira em fogo baixo. Despeje os ovos e mexa lentamente com uma espátula, raspando o fundo, até atingir a cremosidade desejada."
+    },
+    {
+        "nome": "Mingau de Aveia",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["1/2 xícara de aveia em flocos", "1 e 1/2 xícara de leite", "Açúcar ou mel a gosto", "Canela em pó", "Frutas picadas (opcional)"],
+        "modo_preparo": "Em uma panela, misture a aveia, o leite e o açúcar. Leve ao fogo médio, mexendo sempre, até engrossar. Sirva quente, polvilhado com canela e com frutas, se desejar."
+    },
+    {
+        "nome": "Carne Louca (Lanche)",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["500g de acém ou músculo cozido e desfiado", "1 cebola em rodelas", "1/2 pimentão em tiras", "Azeitonas", "Vinagre", "Azeite", "Sal", "Pão francês"],
+        "modo_preparo": "Misture a carne desfiada com a cebola, pimentão e azeitonas. Tempere com azeite, vinagre e sal. Deixe pegar gosto na geladeira. Sirva dentro do pão francês."
+    },
+    {
+        "nome": "Bolo de Milho de Latinha",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["1 lata de milho verde (com a água)", "A mesma medida da lata de fubá", "A mesma medida da lata de açúcar", "A mesma medida da lata de leite", "1/2 lata de óleo", "3 ovos", "1 colher de sopa de fermento"],
+        "modo_preparo": "Bata todos os ingredientes no liquidificador, exceto o fermento. Adicione o fermento e misture. Despeje em forma untada e asse em forno médio por cerca de 40 minutos."
+    },
+    {
+        "nome": "Pipoca Doce com Chocolate",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["1/2 xícara de milho para pipoca", "1/2 xícara de açúcar", "1/4 xícara de óleo", "1/4 xícara de água", "2 colheres de sopa de chocolate em pó"],
+        "modo_preparo": "Coloque todos os ingredientes em uma panela grande. Leve ao fogo médio, mexendo de vez em quando. Quando começar a estourar, tampe a panela e agite constantemente até os estouros pararem."
+    },
+    {
+        "nome": "Vinagrete",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["2 tomates picados sem sementes", "1 cebola picada", "1/2 pimentão verde picado", "Cheiro-verde a gosto", "1/2 xícara de vinagre", "1/4 xícara de azeite", "Sal"],
+        "modo_preparo": "Misture todos os ingredientes em uma tigela. Deixe na geladeira por pelo menos 10 minutos para apurar o sabor. Ótimo para churrasco e sanduíches."
+    },
+    {
+        "nome": "Frango Xadrez Simples",
+        "tempo_preparo": "35 minutos",
+        "ingredientes": ["500g de peito de frango em cubos", "1 pimentão verde em cubos", "1 pimentão vermelho em cubos", "1 cebola em cubos", "Amendoim torrado (opcional)", "Molho shoyu", "Amido de milho"],
+        "modo_preparo": "Tempere o frango com shoyu. Frite o frango em uma panela quente e reserve. Na mesma panela, refogue a cebola e os pimentões. Volte o frango para a panela. Misture um pouco de shoyu com amido de milho e água e despeje na panela para engrossar o molho. Sirva com amendoim."
+    },
+    {
+        "nome": "Risoto de Queijo Simples",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["1 xícara de arroz arbóreo", "1/2 cebola picada", "1/2 xícara de vinho branco seco (opcional)", "1 litro de caldo de legumes quente", "100g de queijo parmesão ralado", "2 colheres de sopa de manteiga", "Azeite", "Sal"],
+        "modo_preparo": "Refogue a cebola no azeite. Adicione o arroz e frite. Junte o vinho e deixe evaporar. Vá adicionando o caldo de legumes quente, concha por concha, mexendo sempre, até o arroz ficar al dente. Desligue o fogo, adicione a manteiga e o queijo. Misture bem."
+    },
+    {
+        "nome": "Pastel de Vento",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["1 rolo de massa de pastel", "Óleo para fritar", "Recheio a gosto (queijo, carne moída, etc)"],
+        "modo_preparo": "Abra a massa de pastel, coloque o recheio de sua preferência e feche bem as bordas com um garfo. Frite em óleo quente até a massa ficar dourada e estufada."
+    },
+    {
+        "nome": "Misto Quente de Forno",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["8 fatias de pão de forma", "8 fatias de presunto", "8 fatias de queijo mussarela", "Molho de tomate", "Orégano", "Manteiga para untar"],
+        "modo_preparo": "Unte um refratário. Monte os sanduíches com pão, molho, presunto e queijo. Coloque no refratário, pincele um pouco de molho por cima, salpique orégano e leve ao forno até o queijo derreter e o pão dourar."
+    },
+    {
+        "nome": "Sopa de Mandioquinha (Batata Baroa)",
+        "tempo_preparo": "35 minutos",
+        "ingredientes": ["500g de mandioquinha", "1 cebola pequena", "Azeite", "Sal", "Cheiro-verde"],
+        "modo_preparo": "Cozinhe a mandioquinha até ficar muito macia. Bata no liquidificador com a água do cozimento. Em uma panela, refogue a cebola no azeite, despeje o creme de mandioquinha, tempere com sal e deixe ferver. Sirva com cheiro-verde."
+    },
+    {
+        "nome": "Bolo de Laranja",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": ["1 laranja inteira com casca", "3 ovos", "1 xícara de óleo", "2 xícaras de açúcar", "2 xícaras de farinha de trigo", "1 colher de sopa de fermento"],
+        "modo_preparo": "Corte a laranja em 4 partes, retire as sementes e a parte branca do meio. Bata no liquidificador com os ovos e o óleo. Em uma tigela, misture este líquido com o açúcar e a farinha. Adicione o fermento. Asse em forno médio."
+    },
+    {
+        "nome": "Berinjela à Parmegiana",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["2 berinjelas", "Molho de tomate", "200g de queijo mussarela", "Queijo parmesão ralado", "Sal", "Óleo"],
+        "modo_preparo": "Corte as berinjelas em fatias, salgue e deixe descansar por 15 minutos. Seque e frite ou grelhe as fatias. Em um refratário, monte camadas de berinjela, molho de tomate e queijo mussarela. Finalize com queijo parmesão e leve ao forno para gratinar."
+    },
+    {
+        "nome": "Iscas de Frango Acebolado",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["500g de filé de frango em tiras", "1 cebola grande em rodelas", "Molho shoyu", "Óleo", "Sal"],
+        "modo_preparo": "Tempere o frango com sal. Frite as iscas de frango em óleo quente até dourar e reserve. Na mesma frigideira, refogue a cebola até ficar macia. Volte o frango para a panela, adicione um pouco de shoyu e misture bem."
+    },
+    {
+        "nome": "Suco de Abacaxi com Hortelã",
+        "tempo_preparo": "10 minutos",
+        "ingredientes": ["1/2 abacaxi em cubos", "Folhas de hortelã a gosto", "1 litro de água gelada", "Açúcar ou adoçante a gosto"],
+        "modo_preparo": "Bata todos os ingredientes no liquidificador. Coe se preferir e sirva imediatamente."
+    },
+    {
+        "nome": "Vitamina de Banana",
+        "tempo_preparo": "5 minutos",
+        "ingredientes": ["2 bananas", "2 copos de leite", "Açúcar ou mel a gosto", "Aveia (opcional)"],
+        "modo_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea. Sirva gelado."
+    },
+    {
+        "nome": "Enroladinho de Salsicha",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["10 salsichas", "Massa de pastel (rolo)", "1 gema para pincelar", "Orégano"],
+        "modo_preparo": "Corte a massa de pastel em tiras e enrole nas salsichas. Coloque em uma assadeira, pincele com a gema, salpique orégano e asse em forno médio até dourar."
+    },
+    {
+        "nome": "Quiabo Refogado",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["300g de quiabo", "1/2 cebola picada", "1 dente de alho", "Azeite", "Vinagre ou limão", "Sal"],
+        "modo_preparo": "Lave e seque bem os quiabos antes de cortar em rodelas. Refogue a cebola e o alho no azeite. Adicione o quiabo e frite em fogo alto. Pingue algumas gotas de vinagre para cortar a baba. Tempere com sal e refogue até ficar macio."
+    },
+    {
+        "nome": "Moqueca de Ovo",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["4 ovos", "1 cebola em rodelas", "1 tomate em rodelas", "1/2 pimentão em rodelas", "Leite de coco", "Azeite de dendê", "Coentro", "Sal"],
+        "modo_preparo": "Em uma panela, faça uma camada de cebola, tomate e pimentão. Regue com azeite de dendê. Quebre os ovos cuidadosamente sobre os legumes. Tempere com sal, regue com leite de coco e cozinhe em fogo baixo, com a panela tampada, até os ovos firmarem. Finalize com coentro."
+    },
+    {
+        "nome": "Geleia de Morango Caseira",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["1 caixa de morangos", "1/2 xícara de açúcar", "Suco de 1/2 limão"],
+        "modo_preparo": "Lave e pique os morangos. Leve ao fogo baixo com o açúcar e o suco de limão. Cozinhe, mexendo de vez em quando, até os morangos desmancharem e a geleia engrossar (cerca de 20-25 minutos)."
+    },
+    {
+        "nome": "Cachorro-Quente de Panela",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["8 salsichas", "1 lata de molho de tomate", "1/2 cebola picada", "Milho verde", "Ervilha", "Pão de cachorro-quente", "Batata palha"],
+        "modo_preparo": "Refogue a cebola. Adicione a salsicha picada ou inteira, o molho de tomate, milho e ervilha. Deixe cozinhar por 10 minutos. Sirva o molho no pão com batata palha por cima."
+    },
+    {
+        "nome": "Fricassê de Frango",
+        "tempo_preparo": "45 minutos",
+        "ingredientes": ["500g de frango desfiado", "1 lata de milho verde", "1 lata de creme de leite", "1 copo de requeijão", "100g de queijo mussarela", "Batata palha"],
+        "modo_preparo": "Bata no liquidificador o milho (com a água), o creme de leite e o requeijão. Em uma panela, misture este creme com o frango desfiado e cozinhe por alguns minutos. Despeje em um refratário, cubra com queijo mussarela e leve ao forno para gratinar. Sirva com batata palha."
+    },
+    {
+        "nome": "Pão de Alho Caseiro",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": ["1 pão francês", "3 dentes de alho amassados", "100g de maionese", "50g de queijo parmesão ralado", "Salsinha picada"],
+        "modo_preparo": "Faça cortes no pão sem separar as fatias. Misture a maionese, o alho, o queijo e a salsinha. Recheie os cortes do pão com essa pasta. Leve ao forno ou churrasqueira até dourar."
+    },
+    {
+        "nome": "Doce de Banana",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["6 bananas nanicas maduras", "1 xícara de açúcar", "Canela em pó"],
+        "modo_preparo": "Amasse as bananas com um garfo. Leve ao fogo baixo com o açúcar, mexendo sempre, até o doce escurecer e desgrudar do fundo da panela. Sirva quente ou frio, com canela em pó."
+    },
+    {
+        "nome": "Chuchu Gratinado",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": ["2 chuchus cozidos em cubos", "1 caixa de creme de leite", "100g de queijo mussarela", "Queijo parmesão ralado", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Misture o chuchu cozido com o creme de leite, sal e pimenta. Coloque em um refratário, cubra com a mussarela e o parmesão. Leve ao forno para gratinar."
+    },
+    {
+        "nome": "Macarrão com Brócolis e Bacon",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["500g de macarrão", "1 maço de brócolis", "200g de bacon em cubos", "3 dentes de alho", "Azeite"],
+        "modo_preparo": "Cozinhe o macarrão. Cozinhe o brócolis até ficar al dente. Em uma frigideira, frite o bacon até ficar crocante. Retire o bacon e, na mesma gordura, doure o alho. Adicione o brócolis e refogue. Misture tudo ao macarrão cozido e sirva com o bacon por cima."
+    },
+    {
+        "nome": "Bolo de Mandioca (Aipim)",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["500g de mandioca crua ralada", "3 ovos", "2 xícaras de açúcar", "100g de coco ralado", "1 vidro de leite de coco", "2 colheres de sopa de manteiga"],
+        "modo_preparo": "Misture todos os ingredientes em uma tigela até obter uma massa homogênea. Despeje em uma forma untada e enfarinhada. Asse em forno pré-aquecido a 180°C por cerca de 50 minutos ou até dourar."
+    },
+    {
+        "nome": "Carne Desfiada na Pressão",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["1 kg de acém ou peito bovino", "1 cebola grande", "3 dentes de alho", "1/2 xícara de molho shoyu", "Sal", "Pimenta do reino"],
+        "modo_preparo": "Na panela de pressão, sele a carne. Adicione a cebola, o alho, o shoyu e os temperos. Não precisa adicionar água. Cozinhe na pressão por 40-50 minutos. Retire a pressão, escorra o caldo (se houver) e chacoalhe a panela fechada para desfiar a carne."
+    },
+    {
+        "nome": "Maçã do Amor",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["6 maçãs pequenas", "500g de açúcar", "1 xícara de água", "1 colher de sopa de vinagre", "Corante alimentício vermelho", "Palitos de sorvete"],
+        "modo_preparo": "Espete as maçãs nos palitos. Em uma panela, misture o açúcar, a água, o vinagre e o corante. Leve ao fogo sem mexer até atingir o ponto de caramelo. Banhe as maçãs na calda e coloque sobre uma superfície untada para secar."
+    },
+    {
+        "nome": "Canjiquinha com Costelinha",
+        "tempo_preparo": "1 hora e 20 minutos",
+        "ingredientes": ["500g de costelinha de porco", "1 xícara de canjiquinha (quirera de milho)", "1 cebola", "2 dentes de alho", "Cheiro-verde", "Sal"],
+        "modo_preparo": "Frite a costelinha até dourar. Adicione a cebola e o alho e refogue. Lave a canjiquinha e adicione à panela. Cubra com água quente, tempere com sal e cozinhe em fogo baixo, mexendo de vez em quando, até a canjiquinha e a costela estarem macias."
+    },
+    {
+        "nome": "Pé de Moleque",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["500g de amendoim torrado sem pele", "500g de açúcar", "1 lata de leite condensado", "1 colher de sopa de manteiga"],
+        "modo_preparo": "Em uma panela, derreta o açúcar até virar um caramelo. Adicione o amendoim e misture. Junte o leite condensado e a manteiga. Cozinhe, mexendo sempre, até desgrudar do fundo da panela. Despeje em uma superfície untada e corte em pedaços antes de esfriar completamente."
+    },
+    {
+        "nome": "Creme de Espinafre",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": ["1 maço de espinafre", "1/2 cebola picada", "1 dente de alho", "1 colher de sopa de farinha de trigo", "1 xícara de leite", "Noz-moscada", "Sal"],
+        "modo_preparo": "Cozinhe o espinafre, escorra e pique. Em uma panela, refogue a cebola e o alho. Adicione a farinha e mexa bem. Junte o leite aos poucos, mexendo para não empelotar. Adicione o espinafre, tempere com sal e noz-moscada e cozinhe até engrossar."
+    },
+    {
+        "nome": "Torta de Limão",
+        "tempo_preparo": "40 minutos + geladeira",
+        "ingredientes": ["1 pacote de biscoito maizena triturado", "100g de manteiga derretida", "1 lata de leite condensado", "1/2 xícara de suco de limão", "Raspas de limão", "3 claras", "6 colheres de sopa de açúcar"],
+        "modo_preparo": "Misture o biscoito triturado com a manteiga e forre o fundo de uma forma. Asse por 10 minutos. Misture o leite condensado com o suco e as raspas de limão e despeje sobre a massa. Bata as claras em neve com o açúcar para fazer um merengue. Cubra a torta com o merengue e leve ao forno para dourar."
+    },
+    {
+        "nome": "Nhoque de Batata",
+        "tempo_preparo": "1 hora",
+        "ingredientes": ["1 kg de batata cozida e espremida", "1 ovo", "Aproximadamente 2 xícaras de farinha de trigo", "Sal", "Molho de sua preferência"],
+        "modo_preparo": "Misture a batata espremida (ainda morna) com o ovo e o sal. Adicione a farinha aos poucos, até a massa parar de grudar nas mãos. Faça rolinhos e corte os nhoques. Cozinhe em água fervente até subirem à superfície. Sirva com o molho."
+    },
+    {
+        "nome": "Paçoca Caseira",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": ["500g de amendoim torrado e sem pele", "1 xícara de açúcar", "1 pitada de sal"],
+        "modo_preparo": "Processe o amendoim no liquidificador ou processador até virar uma farofa grossa. Adicione o açúcar e o sal e processe mais um pouco, apenas para misturar. Modele as paçocas com as mãos ou em forminhas."
+    },
+    {
+        "nome": "Curau de Milho Verde",
+        "tempo_preparo": "30 minutos",
+        "ingredientes": ["4 espigas de milho verde", "1 xícara de leite", "1/2 xícara de açúcar", "Canela em pó"],
+        "modo_preparo": "Rale as espigas de milho ou bata os grãos no liquidificador com o leite. Passe a mistura por uma peneira. Leve o líquido coado ao fogo com o açúcar, mexendo sempre, até engrossar. Despeje em uma travessa e polvilhe canela."
+    }
+
 ]

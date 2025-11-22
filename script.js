@@ -7,19 +7,26 @@ async function carregarDados() {
     try {
         const resposta = await fetch("data.json");
         dados = await resposta.json();
-        renderizarCards(dados); // Exibe todos os cards inicialmente
+        mostrarPaginaInicial(); // Exibe a página inicial
     } catch (error) {
         console.error("Erro ao carregar os dados:", error);
     }
 }
 
 function iniciarBusca() {
-    const termoBusca = campoBusca.value.toLowerCase();
+    // Pega os ingredientes digitados, separa por vírgula, remove espaços e descarta os vazios
+    const ingredientesBusca = campoBusca.value.toLowerCase().split(',')
+        .map(item => item.trim())
+        .filter(item => item);
 
+    // Filtra as receitas
     const resultados = dados.filter(dado => {
-        const nome = dado.nome.toLowerCase();
-        const descricao = dado.descricao.toLowerCase();
-        return nome.includes(termoBusca) || descricao.includes(termoBusca);
+        // Verifica se TODOS os ingredientes buscados estão na lista de ingredientes da receita
+        return ingredientesBusca.every(ingredienteBuscado => 
+            dado.ingredientes.some(ingredienteReceita => 
+                ingredienteReceita.toLowerCase().includes(ingredienteBuscado)
+            )
+        );
     });
 
     renderizarCards(resultados);
@@ -27,36 +34,68 @@ function iniciarBusca() {
 
 function renderizarCards(dados) {
     cardContainer.innerHTML = ""; // Limpa os cards existentes antes de renderizar novos
+    if (dados.length === 0 && campoBusca.value.length > 0) {
+        cardContainer.innerHTML = `<p class="sem-resultados">Nenhuma receita encontrada com esses ingredientes. Tente outros!</p>`;
+        return;
+    }
+
+    const isMultiplosResultados = dados.length > 1;
+
     for (let dado of dados) {
         let card = document.createElement("article");
         card.classList.add("card");
+
+        // Se não for múltiplos resultados (ou seja, só 1), já expande
+        if (!isMultiplosResultados) {
+            card.classList.add("card-expandido");
+        }
+
         card.innerHTML = `
             <h2>${dado.nome}</h2>
-            <p><strong>Ano de criação:</strong> ${dado.data_criacao}</p>
-            <p>${dado.descricao}</p>
-            <a href="${dado.link}" target="_blank">Saiba Mais</a>
+            <div class="conteudo-receita">
+                <p><strong>Tempo de Preparo:</strong> ${dado.tempo_preparo}</p>
+                <p><strong>Ingredientes:</strong> ${dado.ingredientes.join(', ')}.</p>
+                <p><strong>Modo de Preparo:</strong> ${dado.modo_preparo}</p>
+            </div>
         `;
         cardContainer.appendChild(card);
     }
 }
 
+function mostrarPaginaInicial() {
+    cardContainer.innerHTML = `
+        <div class="pagina-inicial">
+            <h2>Bem-vindo ao Mestre Cuca Express!</h2>
+            <p>Sua geladeira está cheia, mas a criatividade na cozinha sumiu?</p>
+            <p>Digite os ingredientes que você tem em casa, separados por vírgula, e nós sugerimos receitas deliciosas para você!</p>
+            <h3>Como usar:</h3>
+            <ol>
+                <li>No campo de busca acima, digite os ingredientes que você tem. Ex: <strong>ovo, tomate, queijo</strong></li>
+                <li>As receitas que usam esses ingredientes aparecerão automaticamente.</li>
+                <li>Quanto mais ingredientes você digitar, mais específica será a busca.</li>
+            </ol>
+            <p class="bom-apetite">Bom apetite!</p>
+        </div>
+    `;
+}
+
 // Carrega os dados assim que a página é carregada
 window.addEventListener('load', carregarDados);
  
-// Adiciona um event listener para a tecla "Enter" no campo de busca
-campoBusca.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        iniciarBusca(); // Executa a busca ao pressionar Enter
+// Adiciona um event listener no container para gerenciar cliques nos cards (Event Delegation)
+cardContainer.addEventListener('click', (event) => {
+    const card = event.target.closest('.card');
+    if (card) {
+        card.classList.toggle('card-expandido');
     }
 });
 
 // Adiciona um event listener para o evento 'input' no campo de busca
 campoBusca.addEventListener('input', () => {
-    // Executa a busca automaticamente se tiver 2+ caracteres
-    if (campoBusca.value.length >= 2) {
+    if (campoBusca.value.length > 0) {
         iniciarBusca();
     } else if (campoBusca.value.length === 0) {
-        // Se o campo for limpo, mostra todos os cards novamente
-        renderizarCards(dados);
+        // Se o campo for limpo, mostra a página inicial novamente
+        mostrarPaginaInicial();
     }
 });

@@ -1,23 +1,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="styl esheet"> ; /* Importa a fonte Quicksand do Google Fonts */
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
 * {
     box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
 }
 
 :root {
-    --primary-color: #086645; /* Cor primária (azul claro) */
-    --secondary-color: #052555; /* Cor secundária (cinza claro) */
-    --tertiary-color: #25095d; /* Cor terciária (cinza médio) */
-    --bg-color: rgb(192, 227, 248);
+    --primary-color: #FF6347;   /* Apetite-estimulante (Tomate) */
+    --secondary-color: #4E443A;  /* Texto principal (Marrom escuro) */
+    --tertiary-color: #A98F78;  /* Texto secundário (Marrom claro) */
+    --bg-color: #FFF8F0;        /* Fundo (Bege claro/Creme) */
 }
 
 body {
     margin: 0; /* Remove a margem padrão do body */
     background: var(--bg-color); /* Define a cor de fundo usando uma variável */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-     font-family: "Special Gothic Expanded One", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
     background: var(--bg-color); /* Cor de fundo do cabeçalho */
-    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */ 
     border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
@@ -36,7 +36,8 @@ header {
 header h1 {
     font-size: 1.5rem; /* Tamanho da fonte */
     margin: 0; /* Remove a margem padrão */
-    font-weight: 500; /* Peso da fonte (médio) */
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400; /* Peso da fonte (médio) */
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
@@ -61,7 +62,7 @@ div input::placeholder {
 
 div input:focus {
     outline: none; /* Remove a borda de foco padrão */
-    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
+    border-color: var(--primary-color); /* Muda a cor da borda ao focar */
     box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
 }
 
@@ -76,7 +77,7 @@ div input:focus {
     white-space: nowrap; /* Impede a quebra de linha do texto */
     transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
-    color: var(--secondary-color); /* Cor do texto */
+    color: var(--primary-color); /* Cor do texto */
     border: 1px solid var(--bg-color); /* Adiciona uma borda */
 }
 
@@ -99,15 +100,13 @@ main {
 }
 
 article {
-    background: none; /* Sem cor de fundo */
-    border-radius: 0; /* Sem bordas arredondadas */
-    padding: 0; /* Remove o padding */
-    padding: 0 1rem; /* Espaçamento interno nos lados */
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
     margin-bottom: 1.25rem; /* Margem inferior */
-    box-shadow: none; /* Sem sombra */
-    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
-    border-bottom: 1px solid var(--bg-color); /* Borda inferior */
-    padding-bottom: 1.5rem; /* Espaçamento interno inferior */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 article:hover {
@@ -118,11 +117,38 @@ article:hover {
 article h2 {
     margin-top: 0; /* Remove a margem superior */
     font-weight: 600; /* Peso da fonte */
-    font-size: 1.6rem; /* Tamanho da fonte */
-    border-bottom: none; /* Sem borda inferior */
-    padding-bottom: 0; /* Sem espaçamento interno inferior */
-    margin-bottom: 0.25rem; /* Margem inferior */
+    font-size: 1.3rem;
+    margin-bottom: 0;
     color: var(--primary-color); /* Cor do texto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Indicador de expansão (+) */
+article h2::after {
+    content: '+';
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Oculta o conteúdo da receita por padrão */
+.conteudo-receita {
+    display: none;
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+/* Estilos para o card expandido */
+.card-expandido .conteudo-receita {
+    display: block; /* Mostra o conteúdo */
+}
+
+.card-expandido h2::after {
+    content: '−'; /* Muda o ícone para (-) */
+    transform: rotate(180deg);
 }
 
 article p {
@@ -146,6 +172,46 @@ article a {
 
 article a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.sem-resultados {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    margin-top: 3rem;
+}
+
+.pagina-inicial {
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    line-height: 1.7;
+}
+
+.pagina-inicial h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pagina-inicial h3 {
+    color: var(--secondary-color);
+    border-top: 1px solid var(--tertiary-color);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pagina-inicial ol {
+    text-align: left;
+    display: inline-block;
+}
+
+.pagina-inicial .bom-apetite {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 2rem;
 }
 
 .footer {
